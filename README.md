@@ -1,10 +1,12 @@
 jetpie-emacs
 ============
 
-My Emacs setting based on several geeks (Purcell/Prelude/Jessica)
+# Emacs setting based on several geeks
+* Purcell (Thanks for your Main frames!) : [https://github.com/purcell/emacs.d]
+* Prelude (Zenburn theme! Thanks!) : [https://github.com/bbatsov/prelude]
+* Jassica (Nice Python Configuration Tutorial!) : [http://www.jesshamrick.com/2012/09/18/emacs-as-a-python-ide/]
 
-Currently Features:
-
+# Main Features:
 
 +Python environment
 
