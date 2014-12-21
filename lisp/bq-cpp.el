@@ -314,17 +314,17 @@
 
 
 
-(require 'ede)
-(global-ede-mode)
+;; (require 'ede)
+;; (global-ede-mode)
 
-(ede-cpp-root-project "imagesearch"
-                      :file "/home/bingqingqu/programming_practice/workspace/imagesearch/Makefile"
-                      :include-path '("/src") ;; add more include
-                      ;; paths here
-                      :system-include-path '("/home/bingqingqu/user-libs/vlfeat/vlfeat-0.9.19"))
-(add-hook 'c++-mode-hook
-          (lambda () (setq flycheck-clang-include-path
-                           (list (expand-file-name "/home/bingqingqu/user-libs/vlfeat/vlfeat-0.9.19")))))
+;; (ede-cpp-root-project "imagesearch"
+;;                       :file "/home/bingqingqu/programming_practice/workspace/imagesearch/Makefile"
+;;                       :include-path '("/src") ;; add more include
+;;                       ;; paths here
+;;                       :system-include-path '("/home/bingqingqu/user-libs/vlfeat/vlfeat-0.9.19"))
+;; (add-hook 'c++-mode-hook
+;;           (lambda () (setq flycheck-clang-include-path
+;;                            (list (expand-file-name "/home/bingqingqu/user-libs/vlfeat/vlfeat-0.9.19")))))
 ;; Available C style:
 ;; “gnu”: The default style for GNU projects
 ;; “k&r”: What Kernighan and Ritchie, the authors of C used in their book
