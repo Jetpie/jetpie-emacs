@@ -44,6 +44,8 @@
 ;; emacs IPython notebook config
 ;; -----------------------------
 ; IPython notebook
+(require-package 'websocket)
+(require-package 'request)
 (require 'ein)
 
 ; shortcut function to load notebooklist
