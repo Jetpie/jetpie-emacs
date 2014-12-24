@@ -4,7 +4,7 @@
 (require 'python-mode)
 ;; (setq ipython-command "/usr/bin/ipython2")
 ;; (require 'ipython)
-(when *is-a-mac*
+(if *is-a-mac*
   (defvar py-name "ipython")
   (defvar py-name "ipython2"))
 
@@ -81,7 +81,7 @@
 
 (setq jedi:complete-on-dot t)                 ; optional
 
-(when *is-a-mac*
+(if *is-a-mac*
   (defvar ve-name "virtualenv")
   (defvar ve-name "virtualenv2"))
 (setq jedi:environment-virtualenv
