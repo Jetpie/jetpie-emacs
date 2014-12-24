@@ -4,9 +4,12 @@
 (require 'python-mode)
 ;; (setq ipython-command "/usr/bin/ipython2")
 ;; (require 'ipython)
+(when *is-a-mac*
+  (defvar py-name "ipython")
+  (defvar py-name "ipython2"))
 
 ; use IPythonn
-(setq-default py-shell-name "ipython")
+(setq-default py-shell-name py-name)
 (setq-default py-which-bufname "IPython")
 ; use the wx backend, for both mayavi and matplotlib
 (setq py-python-command-args
@@ -14,7 +17,7 @@
 (setq py-force-py-shell-name-p t)
 
 (setq
- python-shell-interpreter "ipython"
+ python-shell-interpreter py-name
  python-shell-interpreter-args ""
  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
@@ -78,8 +81,11 @@
 
 (setq jedi:complete-on-dot t)                 ; optional
 
+(when *is-a-mac*
+  (defvar ve-name "virtualenv")
+  (defvar ve-name "virtualenv2"))
 (setq jedi:environment-virtualenv
-      (list "virtualenv" "--system-site-packages"))
+      (list ve-name "--system-site-packages"))
 
 
 
