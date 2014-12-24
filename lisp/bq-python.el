@@ -6,15 +6,15 @@
 ;; (require 'ipython)
 
 ; use IPythonn
-(setq-default py-shell-name "ipython2")
-(setq-default py-which-bufname "IPython2")
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
 ; use the wx backend, for both mayavi and matplotlib
 (setq py-python-command-args
   '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
 (setq py-force-py-shell-name-p t)
 
 (setq
- python-shell-interpreter "ipython2"
+ python-shell-interpreter "ipython"
  python-shell-interpreter-args ""
  python-shell-prompt-regexp "In \\[[0-9]+\\]: "
  python-shell-prompt-output-regexp "Out\\[[0-9]+\\]: "
@@ -46,6 +46,8 @@
 ; IPython notebook
 (require-package 'websocket)
 (require-package 'request)
+;; update ein2
+(require-package 'ein)
 (require 'ein)
 
 ; shortcut function to load notebooklist
@@ -77,7 +79,7 @@
 (setq jedi:complete-on-dot t)                 ; optional
 
 (setq jedi:environment-virtualenv
-      (list "virtualenv2" "--system-site-packages"))
+      (list "virtualenv" "--system-site-packages"))
 
 
 
