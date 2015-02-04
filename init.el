@@ -13,6 +13,8 @@
 (defconst *spell-check-support-enabled* nil)
 
 (defconst *is-a-mac* (eq system-type 'darwin))
+(defconst *is-a-linux* (eq system-type 'gnu/linux))
+(defconst *is-a-win* (eq system-type 'ms-dos))
 ;;---------------------------------------------------------------------
 ;; Bootstrap config from PURCELL
 ;;----------------------------------------------------------------------
