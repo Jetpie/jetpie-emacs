@@ -3,3 +3,18 @@
 
 # Packaging
 .cask
+
+.emacs.desktop
+.emacs.desktop.lock
+.mc-list.el
+.python-environments/
+.session
+.mc-lists.el
+.smex-items
+ac-comphist.dat
+auto-save-list/
+elpa/
+history
+projectile-bookmarks.eld
+projectile.cache
+request/

@@ -355,6 +355,11 @@
 ;; ;; set appearance of a tab that is represented by 4 spaces
 ;; (setq-default tab-width 4)
 
+;; set namespace no indent
+(defun namespace-no-indent ()
+  (c-set-offset 'innamespace [0]))
+(add-hook 'c++-mode-hook 'namespace-no-indent)
+
 ;; Compilation
 (global-set-key (kbd "<f5>") (lambda ()
                                (interactive)
